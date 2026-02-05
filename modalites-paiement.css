@@ -1,0 +1,239 @@
+/* =====================
+   PAGE MODALITÉS DE PAIEMENT
+===================== */
+.syn-doc-page {
+  padding: 100px 5%;
+  box-sizing: border-box;
+}
+
+.syn-doc-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Marque */
+.syn-brand-name {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-primary);
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+
+/* Titre & intro */
+.syn-doc-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 24px 0;
+}
+
+.syn-doc-intro {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto 80px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D8CFC4;
+}
+
+/* =====================
+   SECTION HEADER
+===================== */
+.syn-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.syn-section-header--left {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.syn-section-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-primary);
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--text-primary);
+  background: #FFFFFF;
+}
+
+.syn-section-label--plain {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* =====================
+   BLOCS CADRÉS
+===================== */
+.syn-box-framed {
+  background-color: #FFFFFF;
+  border: 1px solid var(--text-primary);
+  padding: 40px;
+  margin-bottom: 24px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* En-tête offre */
+.syn-offer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.syn-offer-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+}
+
+.syn-offer-delay {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Prix */
+.syn-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.syn-price-label {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.syn-price-val {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Bloc paiement fractionné */
+.syn-price-split-box {
+  background-color: #F9F9F9;
+  border: 1px dashed #A0A0A0;
+  padding: 16px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.syn-price-split-details {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* =====================
+   NOTE FRAIS
+===================== */
+.syn-info-box {
+  border: 1px solid var(--text-primary);
+  background-color: #EFE5D8;
+  padding: 24px;
+  margin: 48px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =====================
+   TEXTES CONTENU
+===================== */
+.syn-text-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.syn-text-p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.syn-text-p--last {
+  margin-bottom: 0;
+}
+
+/* Sous-titres dans les blocs */
+.syn-sub-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* Listes */
+.syn-text-list {
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.syn-text-list--last {
+  margin-bottom: 0;
+}
+
+.syn-text-list li {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+/* =====================
+   SECTION SÉCURITÉ
+===================== */
+.syn-reassurance {
+  margin-top: 64px;
+  border-top: 2px solid var(--text-primary);
+  padding-top: 48px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .syn-doc-page {
+    padding: 60px 20px;
+  }
+
+  .syn-offer-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .syn-price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

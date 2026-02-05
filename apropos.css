@@ -1,0 +1,145 @@
+/* =====================
+   HERO — Page À propos (sans CTA)
+===================== */
+.hero-intro {
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+/* =====================
+   SECTION À PROPOS
+===================== */
+.about-content {
+  padding: 80px 5%;
+}
+
+.about-content .container-narrow {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Titres */
+.h2-about {
+  font-family: serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 60px 0 28px;
+}
+
+.h3-about {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 40px 0 20px;
+}
+
+/* Textes */
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+/* =====================
+   PORTRAIT (TEXTE + IMAGE)
+===================== */
+.portrait-integration {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 60px;
+  align-items: center;
+  margin: 80px -80px 80px 0;
+}
+
+.portrait-image-column {
+  position: relative;
+}
+
+.portrait-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.portrait-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--bg-primary) 0%, transparent 15%);
+  pointer-events: none;
+}
+
+/* =====================
+   LISTE BÉNÉFICES
+===================== */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.benefits-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--text-secondary);
+}
+
+/* =====================
+   BLOC CTA FINAL
+===================== */
+.cta-final-block {
+  margin-top: 100px;
+  padding: 60px 40px;
+  background-color: var(--bg-header);
+  text-align: center;
+}
+
+.cta-final-block .h2-about {
+  margin-top: 0;
+}
+
+.cta-final-block p {
+  color: var(--text-secondary);
+}
+
+.cta-button-about {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 32px;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button-about:hover {
+  opacity: 0.8;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 1100px) {
+  .portrait-integration {
+    grid-template-columns: 1fr;
+    margin: 60px 0;
+  }
+
+  .portrait-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-final-block {
+    padding: 40px 24px;
+  }
+}

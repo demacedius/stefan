@@ -1,0 +1,151 @@
+/* =====================
+   HERO — Page Audit
+===================== */
+.hero-banner {
+  min-height: calc(100vh - 88px);
+}
+
+.hero-image {
+  object-position: 65% center;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(244, 239, 232, 0.97) 0%,
+    rgba(244, 239, 232, 0.94) 30%,
+    rgba(244, 239, 232, 0.80) 50%,
+    rgba(244, 239, 232, 0.40) 65%,
+    rgba(244, 239, 232, 0.0) 78%
+  );
+}
+
+.hero-intro {
+  color: #2A2A2A;
+  margin-bottom: 28px;
+}
+
+/* =====================
+   INTRO — Page Audit
+===================== */
+.intro-section-branding {
+  padding: 120px 5% 56px;
+}
+
+.intro-pre-scroll {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  margin-top: 48px;
+  border-left: 1px solid #BEB8AE;
+  padding-left: 16px;
+}
+
+/* =====================
+   SECTION AUDIT CENTREE
+===================== */
+.section-audit-centered {
+  padding: 0 5% 120px;
+  margin-top: -60px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+
+.container-audit-narrow {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.audit-title {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 24px 0;
+  color: var(--text-primary);
+}
+
+.audit-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+/* Liste avec filets */
+.audit-feature-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 48px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.audit-feature-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+/* Bloc prix & CTA */
+.audit-footer-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.audit-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.audit-delay-line {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.audit-deduction {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  opacity: 0.9;
+  margin: 0 0 8px 0;
+}
+
+/* Bouton achat */
+.cta-buy-package {
+  display: inline-block;
+  background-color: var(--accent-gray);
+  color: var(--text-primary);
+  padding: 16px 32px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  width: fit-content;
+}
+
+.cta-buy-package:hover {
+  background-color: rgba(190, 184, 174, 0.4);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 991px) {
+  .section-audit-centered {
+    margin-top: 0;
+    padding-bottom: 80px;
+  }
+}

@@ -1,0 +1,276 @@
+/* =====================
+   VARIABLES — Page Branding
+===================== */
+:root {
+  --p-bg-card: #EFE5D8;
+  --p-silent: #EFE7DC;
+  --p-line: #D8CFC4;
+  --p-border-strong: #D0C5B6;
+}
+
+/* =====================
+   PAGE PROCESS — Layout
+===================== */
+.process-page {
+  -webkit-font-smoothing: antialiased;
+}
+
+.container-main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.grid-structure {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.silent-column {
+  background-color: var(--p-silent);
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
+.structural-line {
+  border-left: 1px solid var(--p-line);
+}
+
+/* =====================
+   SECTIONS & RYTHME
+===================== */
+.process-section {
+  padding: 50px 0;
+}
+
+.tight-bottom {
+  padding-bottom: 20px;
+}
+
+.tight-top {
+  padding-top: 20px;
+}
+
+/* =====================
+   HERO PROCESS
+===================== */
+.process-hero {
+  padding-bottom: 30px;
+}
+
+.hero-visual-container {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.hero-process-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-brand-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(244, 239, 232, 0.1);
+}
+
+.brand-name-hero {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.h2-brand-sub {
+  font-size: 19px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* =====================
+   TYPOGRAPHIE
+===================== */
+.h1-process {
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.h2-process {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.hero-subtitle {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+.process-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.process-note {
+  opacity: 0.7;
+}
+
+/* =====================
+   TARIFS
+===================== */
+.stats-grid-v2 {
+  display: flex;
+  gap: 40px;
+  margin-top: 35px;
+  flex-wrap: nowrap;
+}
+
+.stat-item-v2 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+/* =====================
+   LIGNE D'ANCRAGE
+===================== */
+.anchor-line-container {
+  padding: 40px 0;
+}
+
+.anchor-line {
+  height: 1px;
+  background-color: var(--p-line);
+  width: 100%;
+}
+
+/* =====================
+   LISTE PROCESS
+===================== */
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.process-list li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 15px;
+  color: var(--text-secondary);
+}
+
+.process-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 12px;
+  height: 1px;
+  background-color: var(--p-line);
+}
+
+/* =====================
+   BLOC CONCEPT
+===================== */
+.concept-card {
+  background-color: var(--p-bg-card);
+  padding: 45px;
+  max-width: 750px;
+  border-radius: 2px;
+  border-left: 2px solid var(--p-border-strong);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* =====================
+   ÉTAPES NUMÉROTÉES
+===================== */
+.steps-container-v2 {
+  margin-top: 24px;
+}
+
+.step-item-v2 {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--p-line);
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 17.5px;
+}
+
+.step-number-v2 {
+  font-size: 16px;
+  color: #948F85;
+  font-weight: 800;
+  min-width: 35px;
+}
+
+/* =====================
+   CTA FINAL
+===================== */
+.process-cta {
+  padding: 80px 0;
+  text-align: left;
+}
+
+.cta-button-process {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 18px 40px;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button-process:hover {
+  opacity: 0.8;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 991px) {
+  .grid-structure {
+    grid-template-columns: 1fr;
+  }
+
+  .silent-column {
+    display: none;
+  }
+
+  .stats-grid-v2 {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stat-item-v2 {
+    white-space: normal;
+  }
+
+  .h1-process {
+    font-size: 40px;
+  }
+}

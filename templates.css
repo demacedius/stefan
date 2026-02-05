@@ -1,0 +1,357 @@
+/* =====================
+   HERO — Page Templates
+===================== */
+.hero-intro {
+  color: #2A2A28;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+/* =====================
+   INTRO UNIVERS
+===================== */
+.intro-univers {
+  padding: 120px 0 80px;
+}
+
+.container-gabarit-offset {
+  margin-left: 10%;
+  max-width: 680px;
+  text-align: left;
+}
+
+.title-univers {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.subtitle-evolution {
+  border-left: 1px solid #d1d1d1;
+  padding-left: 15px;
+  margin-top: 25px;
+  font-style: italic;
+  color: #7a7a7a;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+/* =====================
+   SECTION PACKS (UNIVERS)
+===================== */
+.section-packs {
+  padding: 60px 5% 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-packs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Carte */
+.pack-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.pack-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Visuel */
+.pack-visual-container {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #E6DED4;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.pack-image-asset {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.pack-card:hover .pack-image-asset {
+  transform: scale(1.05);
+}
+
+/* Contenu */
+.pack-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+.pack-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+  letter-spacing: 0.01em;
+}
+
+.pack-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.pack-tags {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.pack-cta {
+  font-size: 15px;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(28, 28, 28, 0.3);
+  padding-bottom: 2px;
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  transition: border-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.pack-cta:hover {
+  border-bottom-color: rgba(28, 28, 28, 1);
+  padding-left: 4px;
+}
+
+/* Carte Featured (Bundle) */
+.card-featured {
+  position: relative;
+  border: 1px solid rgba(28, 28, 28, 0.08);
+  border-radius: 10px;
+}
+
+.bundle-status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  line-height: 1;
+  z-index: 2;
+}
+
+.color-bundle-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  display: flex;
+  z-index: 2;
+}
+
+.bundle-color {
+  flex: 1;
+  height: 100%;
+}
+
+/* =====================
+   SECTION CONTINUITÉ
+===================== */
+.section-continuite {
+  padding: 80px 0 40px;
+}
+
+.micro-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.micro-divider::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background-color: var(--text-primary);
+  opacity: 0.3;
+}
+
+.micro-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* =====================
+   SECTION USAGE GRID (FONDS)
+===================== */
+.section-usage-grid {
+  padding: 80px 5% 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-grid-usage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Carte usage */
+.usage-card {
+  background-color: rgba(28, 28, 28, 0.03);
+  border: 1px solid rgba(28, 28, 28, 0.05);
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+}
+
+.usage-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.usage-category {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.usage-card-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.usage-count {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.usage-list {
+  list-style: none;
+  margin: 0 0 24px 0;
+  padding: 0 0 0 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.usage-cta-link {
+  font-size: 14px;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(28, 28, 28, 0.3);
+  padding-bottom: 2px;
+  margin-top: auto;
+  align-self: flex-start;
+  transition: border-color 0.3s ease;
+}
+
+.usage-cta-link:hover {
+  border-bottom-color: rgba(28, 28, 28, 1);
+}
+
+/* Carte Duo */
+.card-duo {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border-color: transparent;
+}
+
+.card-duo .usage-category {
+  color: #FFFFFF;
+}
+
+.usage-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.duo-description {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.duo-cta {
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 991px) {
+  .container-gabarit-offset {
+    margin-left: 5%;
+    padding-right: 5%;
+  }
+
+  .container-packs {
+    grid-template-columns: 1fr;
+  }
+
+  .container-grid-usage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .container-grid-usage {
+    grid-template-columns: 1fr;
+  }
+
+  .section-usage-grid {
+    padding: 80px 5% 60px;
+  }
+}
+
+@media (max-width: 479px) {
+  .title-univers {
+    font-size: 26px;
+  }
+}

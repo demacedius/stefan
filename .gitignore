@@ -1,0 +1,28 @@
+# Dossiers et fichiers à ignorer
+
+# Dossier de déploiement temporaire
+synapse-deploy/
+
+# Dossier ProJet Site (sources originales)
+ProJet Site/
+
+# Fichiers système macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Fichiers temporaires
+*.log
+*.tmp
+.cache/
+
+# Fichier workspace
+*.code-workspace

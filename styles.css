@@ -89,6 +89,37 @@ body {
   width: 100%;
 }
 
+/* Menu hamburger pour mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #1C1C1C;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
 /* =====================
    HERO BANNER
 ===================== */
@@ -212,6 +243,19 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+}
+
+.offer-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.offer-item-link:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
 }
 
 .offer-item {
@@ -347,8 +391,39 @@ body {
    RESPONSIVE
 ===================== */
 @media (max-width: 991px) {
+  .menu-toggle {
+    display: flex;
+  }
+
   .nav-menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #EFE9E0;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 5%;
+    border-top: 1px solid rgba(28, 28, 28, 0.1);
+    z-index: 100;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu .nav-link {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.06);
+  }
+
+  .nav-menu .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .nav-header {
+    position: relative;
   }
 
   .h1-hero {

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pack Mini Branding — Synapse Créatif</title>
+  <title>Branding essentiel — Synapse Créatif</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="branding.css">
+  <link rel="stylesheet" href="templates.css">
 </head>
 <body>
 
@@ -16,7 +16,13 @@
   <div class="header-identity">
     <span class="brand-name">Synapse Créatif</span>
   </div>
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <nav class="nav-menu">
+    <a href="index.html" class="nav-link">Accueil</a>
     <a href="audit.html" class="nav-link">Audit stratégique</a>
     <a href="#" class="nav-link current">Branding essentiel</a>
     <a href="templates.html" class="nav-link">Templates & fonds visuels</a>
@@ -25,155 +31,60 @@
   </nav>
 </header>
 
-<main class="process-page">
+<main>
 
-  <!-- HERO -->
-  <header class="process-hero">
-    <div class="hero-visual-container">
-      <img
-        src="images/bannieres/mini-branding.png"
-        alt="Bannière Pack Mini Marque"
-        class="hero-process-img"
-      >
-      <div class="hero-brand-overlay">
-        <div class="container-main">
-          <div class="brand-identity">
-            <span class="brand-name-hero">Synapse Créatif</span>
-            <h2 class="h2-brand-sub">Branding & Direction artistique augmentée</h2>
-          </div>
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="h1-hero">Branding essentiel</h1>
+      <p class="hero-intro">
+        Clarification, conception ou structuration d'une identité visuelle pour poser un cadre cohérent, lisible et directement exploitable dans la durée.
+      </p>
+      <a href="#offres" class="hero-cta">Découvrir les formules</a>
+    </div>
+    <img src="images/bannieres/mini-branding.png" class="hero-image" alt="Bannière Branding essentiel">
+  </section>
+
+  <section class="intro-section-branding">
+    <div class="container-narrow">
+      <h2 class="intro-title">Avant le logo : la structure visuelle qui donne du sens à tout le reste.</h2>
+      <p class="para-context">
+        Construire une identité visuelle claire et cohérente, c'est poser un cadre qui structure votre communication et renforce votre présence sur la durée.
+      </p>
+    </div>
+  </section>
+
+  <section id="offres" class="section-packs">
+    <div class="container-packs">
+
+      <article class="pack-card">
+        <div class="pack-visual-container">
+          <img src="images/bannieres/mini-branding.png" alt="Pack Mini Branding" class="pack-image-asset">
         </div>
-      </div>
-    </div>
-
-    <div class="container-main grid-structure">
-      <div class="content-column">
-        <h1 class="h1-process">Pack Mini Branding</h1>
-        <p class="hero-subtitle">
-          Une identité visuelle simple, claire et professionnelle,
-          conçue pour les créateurs, indépendants et petites marques.
-        </p>
-
-        <div class="stats-grid-v2">
-          <div class="stat-item-v2">Tarif fixe : <strong>299 €</strong></div>
-          <div class="stat-item-v2">Livraison : <strong>3 jours ouvrés</strong></div>
+        <div class="pack-content">
+          <h3 class="pack-title">Pack Mini Branding — 299 €</h3>
+          <p class="pack-description">
+            Une identité visuelle simple, claire et professionnelle, conçue pour les créateurs, indépendants et petites marques.
+          </p>
+          <div class="pack-tags">Tarif fixe • Livraison : 3 jours ouvrés</div>
+          <a href="branding-mini.html" class="pack-cta">Découvrir mon approche</a>
         </div>
+      </article>
 
-        <div class="anchor-line-container">
-          <div class="anchor-line"></div>
+      <article class="pack-card">
+        <div class="pack-visual-container">
+          <img src="images/bannieres/branding-intermediaire.png" alt="Pack Branding Intermédiaire" class="pack-image-asset">
         </div>
-      </div>
-      <div class="silent-column structural-line"></div>
-    </div>
-  </header>
-
-  <!-- À QUI -->
-  <section class="process-section tight-bottom">
-    <div class="container-main grid-structure">
-      <div class="content-column">
-        <h2 class="h2-process">À qui s'adresse ce pack</h2>
-        <ul class="process-list">
-          <li>Créateurs, freelances et indépendants</li>
-          <li>Petites marques en lancement ou repositionnement léger</li>
-          <li>Projets sans identité claire ou visuelle structurée</li>
-          <li>Personnes souhaitant une base visuelle professionnelle</li>
-        </ul>
-        <p><strong>Idéal si :</strong> vous avez besoin d'un socle visuel clair sans branding complexe.</p>
-        <p class="process-note">👉 Non adapté si vous recherchez une stratégie de marque complète ou une charte exhaustive.</p>
-      </div>
-      <div class="silent-column structural-line"></div>
-    </div>
-  </section>
-
-  <!-- PRINCIPE -->
-  <section class="process-section tight-top">
-    <div class="container-main">
-      <div class="concept-card">
-        <h2 class="h2-process">Principe clé</h2>
-        <p><strong>Un cadrage clair → une identité cohérente</strong></p>
-        <p>
-          Le Pack Mini Marque pose une direction visuelle simple,
-          cohérente et directement exploitable.
-        </p>
-        <p class="process-note">Je cadre, vous validez, je produis.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="process-section">
-    <div class="container-main grid-structure">
-      <div class="content-column">
-        <h2 class="h2-process">Concrètement, comment ça se passe</h2>
-
-        <div class="steps-container-v2">
-          <div class="step-item-v2">
-            <span class="step-number-v2">01</span>
-            Cadrage — QCM structuré (univers, goûts, références, couleurs)
-          </div>
-          <div class="step-item-v2">
-            <span class="step-number-v2">02</span>
-            Proposition de 2 visuels directionnels
-          </div>
-          <div class="step-item-v2">
-            <span class="step-number-v2">03</span>
-            Validation de la direction visuelle retenue
-          </div>
-          <div class="step-item-v2">
-            <span class="step-number-v2">04</span>
-            Production de l'ensemble des éléments du pack
-          </div>
-          <div class="step-item-v2">
-            <span class="step-number-v2">05</span>
-            Livraison du pack complet
-          </div>
+        <div class="pack-content">
+          <h3 class="pack-title">Pack Branding Intermédiaire — 750 €</h3>
+          <p class="pack-description">
+            Conçu pour les marques qui souhaitent un univers visuel stable, émotionnel et cohérent, sans passer par un branding complet.
+          </p>
+          <div class="pack-tags">Tarif fixe • Livraison : 4 jours ouvrés</div>
+          <a href="branding-intermediaire.html" class="pack-cta">Découvrir mon approche</a>
         </div>
-      </div>
-      <div class="silent-column structural-line"></div>
-    </div>
-  </section>
+      </article>
 
-  <!-- CONTENU -->
-  <section class="process-section tight-bottom">
-    <div class="container-main grid-structure">
-      <div class="content-column">
-        <h2 class="h2-process">Contenu du Pack Mini Marque</h2>
-        <ul class="process-list">
-          <li>1 moodboard (6 images)</li>
-          <li>1 palette de 3 à 4 couleurs</li>
-          <li>2 typographies recommandées</li>
-          <li>2 visuels directionnels</li>
-          <li>1 mini-univers visuel (ambiance, matières, lumière)</li>
-          <li>1 micro-guideline (3 do / 3 don't)</li>
-          <li>1 format inclus par visuel directionnel</li>
-          <li>Formats supplémentaires : +6 € / format</li>
-        </ul>
-      </div>
-      <div class="silent-column structural-line"></div>
-    </div>
-  </section>
-
-  <!-- EXCLUSIONS -->
-  <section class="process-section tight-top">
-    <div class="container-main grid-structure">
-      <div class="content-column">
-        <h2 class="h2-process">Ce que le pack ne comprend pas</h2>
-        <ul class="process-list">
-          <li>Stratégie de marque ou positionnement</li>
-          <li>Charte graphique complète</li>
-          <li>Logo complexe ou système d'identité avancé</li>
-          <li>Direction artistique lourde ou expérimentale</li>
-        </ul>
-      </div>
-      <div class="silent-column structural-line"></div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="process-cta">
-    <div class="container-main">
-      <h2 class="h2-process">Démarrer le Pack Mini Marque</h2>
-      <p>Un socle visuel clair, livré rapidement, prêt à être utilisé.</p>
-      <a href="https://buy.stripe.com/eVqeVcfJeaH96794TI4Vy01" class="cta-button-process">Lancer mon Mini Branding</a>
     </div>
   </section>
 
@@ -206,6 +117,8 @@
     </div>
   </div>
 </footer>
+
+<script src="menu.js"></script>
 
 </body>
 </html>

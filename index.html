@@ -15,6 +15,11 @@
   <div class="header-identity">
     <span class="brand-name">Synapse Créatif</span>
   </div>
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <nav class="nav-menu">
     <a href="audit.html" class="nav-link">Audit stratégique</a>
     <a href="branding.html" class="nav-link">Branding essentiel</a>
@@ -31,8 +36,8 @@
     <div class="hero-content">
       <h1 class="h1-hero">Direction artistique<br>augmentée</h1>
       <p class="hero-intro">
-       Des univers visuels clairs, cohérent et durables,<br>
-       pensés comme de véritables systèmes de<br> marque.
+       Des univers visuels clairs, cohérents et durables,<br>
+       pensés comme de véritables systèmes de marque.
       </p>
       <a href="#offres" class="hero-cta">Découvrir l'approche</a>
     </div>
@@ -43,7 +48,7 @@
     <div class="container-narrow">
       <h2 class="intro-title intro-lead">
         J'aide les marques à construire<br>
-        un univers visuel clair, cohérents et durable,
+        un univers visuel clair, cohérent et durable,
         <span class="lead-break">
           pour être <span class="lead-emphasis">reconnues</span>,
           <span class="lead-emphasis">comprises</span> et
@@ -53,37 +58,43 @@
     </div>
   </section>
 
-  <section class="offers-grid">
+  <section class="offers-grid" id="offres">
 
-    <div class="offer-item">
-      <span class="offer-badge">APPROCHE STRUCTURANTE</span>
-      <p class="offer-hook">Quand votre identité visuelle manque de clarté ou de cadre.</p>
-      <h3 class="offer-title">Audit stratégique</h3>
-      <p class="offer-description">
-        Une analyse structurée pour clarifier votre univers visuel et orienter les prochaines étapes.
-      </p>
-      <a href="audit.html" class="offer-link">Accéder à l'audit →</a>
-    </div>
+    <a href="audit.html" class="offer-item-link">
+      <div class="offer-item">
+        <span class="offer-badge">APPROCHE STRUCTURANTE</span>
+        <p class="offer-hook">Quand votre identité visuelle manque de clarté ou de cadre.</p>
+        <h3 class="offer-title">Audit stratégique</h3>
+        <p class="offer-description">
+          Une analyse structurée pour clarifier votre univers visuel et orienter les prochaines étapes.
+        </p>
+        <span class="offer-link">Accéder à l'audit →</span>
+      </div>
+    </a>
 
-    <div class="offer-item">
-      <span class="offer-badge"></span>
-      <p class="offer-hook">Avant le logo : la structure visuelle qui donne du sens à tout le reste.</p>
-      <h3 class="offer-title">Branding essentiel</h3>
-      <p class="offer-description">
-        Clarification, conception ou structuration d'une identité visuelle pour poser un cadre cohérent, lisible et directement exploitable dans la durée.
-      </p>
-      <a href="branding.html" class="offer-link">Structurer mon identité →</a>
-    </div>
+    <a href="branding.html" class="offer-item-link">
+      <div class="offer-item">
+        <span class="offer-badge"></span>
+        <p class="offer-hook">Avant le logo : la structure visuelle qui donne du sens à tout le reste.</p>
+        <h3 class="offer-title">Branding essentiel</h3>
+        <p class="offer-description">
+          Clarification, conception ou structuration d'une identité visuelle pour poser un cadre cohérent, lisible et directement exploitable dans la durée.
+        </p>
+        <span class="offer-link">Structurer mon identité →</span>
+      </div>
+    </a>
 
-    <div class="offer-item">
-      <span class="offer-badge"></span>
-      <p class="offer-hook">Quand vous cherchez des ressources prêtes à l'emploi.</p>
-      <h3 class="offer-title">Templates & Fonds visuels</h3>
-      <p class="offer-description">
-        Templates et fonds visuels prêts à l'emploi pour aider les équipes à produire plus vite.
-      </p>
-      <a href="templates.html" class="offer-link">Voir les supports →</a>
-    </div>
+    <a href="templates.html" class="offer-item-link">
+      <div class="offer-item">
+        <span class="offer-badge"></span>
+        <p class="offer-hook">Quand vous cherchez des ressources prêtes à l'emploi.</p>
+        <h3 class="offer-title">Templates & Fonds visuels</h3>
+        <p class="offer-description">
+          Templates et fonds visuels prêts à l'emploi pour aider les équipes à produire plus vite.
+        </p>
+        <span class="offer-link">Voir les supports →</span>
+      </div>
+    </a>
 
     <div class="offer-item">
       <span class="offer-badge"></span>
@@ -126,6 +137,8 @@
     </div>
   </div>
 </footer>
+
+<script src="menu.js"></script>
 
 </body>
 </html>

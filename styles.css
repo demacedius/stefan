@@ -128,7 +128,6 @@ body {
 
 /* Overlay du menu mobile */
 .menu-overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -138,12 +137,13 @@ body {
   backdrop-filter: blur(4px);
   z-index: 98;
   opacity: 0;
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  transition: opacity 400ms ease-in-out;
 }
 
 .menu-overlay.active {
-  display: block;
   opacity: 1;
+  pointer-events: auto;
 }
 
 /* =====================
@@ -426,52 +426,51 @@ body {
   }
 
   .nav-menu {
-    display: none;
+    display: flex;
     position: fixed;
-    top: 0;
-    right: -100%;
+    top: -100%;
+    left: 0;
     width: 100%;
-    max-width: 400px;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-color: #EFE9E0;
     flex-direction: column;
     gap: 0;
-    padding: 100px 40px 40px;
     z-index: 999;
-    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.1);
-    transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    transition: top 400ms ease-in-out;
     overflow-y: auto;
   }
 
   .nav-menu.active {
-    display: flex;
-    right: 0;
+    top: 0;
+    padding: 5em 1em;
   }
 
   .nav-menu .nav-link {
-    padding: 20px 0;
-    font-size: 18px;
+    padding: 18px 0;
+    font-size: 17px;
     font-weight: 500;
     border-bottom: 1px solid rgba(28, 28, 28, 0.08);
     width: 100%;
     opacity: 0;
-    transform: translateX(30px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-20px);
+    transition: all 400ms ease-in-out;
     position: relative;
   }
 
   .nav-menu.active .nav-link {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   /* Animation décalée pour chaque lien */
-  .nav-menu.active .nav-link:nth-child(1) { transition-delay: 0.05s; }
-  .nav-menu.active .nav-link:nth-child(2) { transition-delay: 0.10s; }
-  .nav-menu.active .nav-link:nth-child(3) { transition-delay: 0.15s; }
-  .nav-menu.active .nav-link:nth-child(4) { transition-delay: 0.20s; }
-  .nav-menu.active .nav-link:nth-child(5) { transition-delay: 0.25s; }
-  .nav-menu.active .nav-link:nth-child(6) { transition-delay: 0.30s; }
+  .nav-menu.active .nav-link:nth-child(1) { transition-delay: 100ms; }
+  .nav-menu.active .nav-link:nth-child(2) { transition-delay: 150ms; }
+  .nav-menu.active .nav-link:nth-child(3) { transition-delay: 200ms; }
+  .nav-menu.active .nav-link:nth-child(4) { transition-delay: 250ms; }
+  .nav-menu.active .nav-link:nth-child(5) { transition-delay: 300ms; }
+  .nav-menu.active .nav-link:nth-child(6) { transition-delay: 350ms; }
 
   .nav-menu .nav-link:last-child {
     border-bottom: none;
@@ -494,9 +493,9 @@ body {
 
   .nav-menu .nav-link.current {
     background-color: rgba(190, 184, 174, 0.3);
-    padding: 20px 16px;
+    padding: 18px 16px;
     margin: 0 -16px;
-    border-radius: 8px;
+    border-radius: 6px;
     border-bottom: 1px solid transparent;
   }
 

@@ -9,7 +9,7 @@
   object-position: 65% center;
 }
 
-.hero-overlay {
+/* .hero-overlay {
   background: linear-gradient(
     to right,
     rgba(244, 239, 232, 0.97) 0%,
@@ -18,7 +18,7 @@
     rgba(244, 239, 232, 0.40) 65%,
     rgba(244, 239, 232, 0.0) 78%
   );
-}
+} */
 
 .hero-intro {
   color: #2A2A2A;

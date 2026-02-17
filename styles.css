@@ -300,6 +300,7 @@ body {
   letter-spacing: 0.12em;
   font-weight: 600;
   color: #5A5A5A;
+  opacity: 0.8;
   margin-bottom: 12px;
   height: 14px; /* Garde l'alignement même si vide */
 }
